@@ -7,7 +7,7 @@ public sealed class CalculatorTests
     public void Add_TwoNumbers_ReturnsSum()
     {
         var calc = new Calculator();
-        var result = calc.Add(2, 3);
+        var result = calc.Add(2, 4);
         Assert.Equal(5, result);
     }
 }
