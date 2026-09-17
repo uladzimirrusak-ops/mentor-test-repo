@@ -1,16 +1,13 @@
 using Xunit;
+using StudentProject; // Неймспейс класса студента
 
 public sealed class CalculatorTests
 {
     [Fact]
-    public void Smoke_Ok()
+    public void Add_TwoNumbers_ReturnsSum()
     {
-        Assert.Equal(2, 1 + 1);
-    }
-
-    [Fact]
-    public void Intentional_Fail()
-    {
-        Assert.Equal("HELLO!", "HELLO");
+        var calc = new Calculator();
+        var result = calc.Add(2, 3);
+        Assert.Equal(5, result);
     }
 }
