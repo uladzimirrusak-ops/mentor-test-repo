@@ -9,4 +9,10 @@
     <PackageReference Include="xunit" Version="2.8.1" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.8.1" />
   </ItemGroup>
+
+<!-- Ссылка на проект кандидата -->
+  <ItemGroup>
+    <ProjectReference Include="../StudentProject/StudentProject.csproj" />
+  </ItemGroup>
+</Project>
 </Project>
